@@ -9,7 +9,6 @@ public class Program_zamiana_temperatury_Ca_na_Fa {
 
         int i = scanner.nextInt();
 
-
         switch (i) {
             case 1:
                 float wynikFa = 0;
@@ -23,12 +22,10 @@ public class Program_zamiana_temperatury_Ca_na_Fa {
                 float wynikC = 0;
                 System.out.println("Podaj temperature w Fareinheitach: ");
                 float fa = scanner.nextInt();
-                wynikC =  (fa - 32) / (float)1.8;
+                wynikC = (fa - 32) / (float) 1.8;
                 System.out.println("Wynik:" + wynikC);
                 break;
         }
 
-
-
-}
+    }
 }
