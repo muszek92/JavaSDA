@@ -21,6 +21,6 @@ public class Obliczanie_Fibonacciego {
        int n = scanner.nextInt();       // przypisanie do int n z "Fibonacci"  int-a z "main
        int wynik = Fibonacci(n);        // pobierz wynik zwrócony po wykonaniu funkcji "Fibonacci" i przypisz do zmiennej "wynik"
        System.out.println("Wynik ciągu Fibonacciego to: " + wynik);
-
+test
     }
 }
