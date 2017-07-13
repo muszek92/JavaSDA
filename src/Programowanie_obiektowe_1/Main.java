@@ -18,6 +18,7 @@ public class Main {
         dyrektor.pensja =15000;
 
         prezes.OpiszPracownika();
+        dyrektor.OpiszPracownika();
 
     }
 
