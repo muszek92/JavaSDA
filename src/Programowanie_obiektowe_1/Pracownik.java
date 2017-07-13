@@ -9,7 +9,7 @@ public class Pracownik {
     public String imie;   //pole - pojedynczy element
     public String nazwisko;
     public int wiek;
-    private float pensja;
+    public float pensja;
 
     public Pracownik(){         // defaultowo puste - jest to konstruktor odpowiadacjący i pobierany do "new" np. Pracownik dyrektor = new Pracownik();
         pensja = 2000;       // zwykła metoda która pozwala na starcie ziinicjować / przypisać odrazu jakąś wartość na STARCIE
@@ -22,7 +22,7 @@ public class Pracownik {
 
 
     public void OpiszPracownika(){
-        System.out.println("Imię: " + imie + " Nazwisko: " + nazwisko + "Jego pensja to: " + pensja);
+        System.out.println("Imię: " + imie + " Nazwisko: " + nazwisko );  // this - odniesienie do tego który wywołał tą metodę
     }
 
 
