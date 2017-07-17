@@ -31,7 +31,7 @@ public class Employee {
     public void setAge(int age) {
         if (age < 0 ){
             System.out.println("Wiek nie moze byc mniejszy od 0");
-        }
+        }else
         this.age = age;
     }
 
@@ -44,5 +44,9 @@ public class Employee {
             System.out.println("Wypłatna nie może być ujemna");
         }else
         this.salary = salary;
+    }
+
+    public void describeEmpolyee(){
+        System.out.println("Name: " + this.name + " Surname: " + this.surname + " Age: " + this.age);
     }
 }
