@@ -1,6 +1,4 @@
 package company;
-
-
 import java.util.Scanner;
 
 public class EmployeeManager {
@@ -35,15 +33,34 @@ public class EmployeeManager {
 
     // metoda do usuwania pracownika z bazy
     public void deleteEmployee(){
-
         System.out.println("Podaj id pracownika którego chcesz usunąć: ");
-        Employee delEmp = null;
-        delEmp.getName(scanner.nextInt());
+       int index = scanner.nextInt();
+       myCompany.deleteEmployee(index);
     }
 
     // metoda do wypisywania listy pracowników
     public void printEmployees(){
+        myCompany.printEmployees();
+    }
 
+    // metoda do wypisywania średniej pensji
+   public void avgEmployeesSalary(){
+       double result = myCompany.countAverageSalary();
+       System.out.println("średnia pensji to: " + result);
+
+   }
+
+   // metoda do wypisywania średniego wieku
+    public void avgEmployeesAge(){
+       double result = myCompany.countAverageAge();
+       System.out.println("średni wiek pracowników to: " + result);
+    }
+
+    // metoda do wypisywania największej pensji
+
+    public void maxEmployeesSalary(){
+        Employee result = myCompany.EmployeeWithHightSalary();
+        System.out.println("Pracownik z najwyższą pensją to: " + result.getName() + " " + result.getSurname() + " i jego pensja wynosi: " + result.getSalary()) ;
     }
 
 }
