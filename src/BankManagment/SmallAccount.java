@@ -9,8 +9,12 @@ public class SmallAccount extends SavingsAccount {
         return withrawLimit;
     }
 
+    public SmallAccount(){
 
-    public SmallAccount(double withrawLimit) {
+    }
+
+
+    public SmallAccount(double limit, double withrawLimit) {
         this.withrawLimit = withrawLimit; // ustalanie limitu wypłat
     }
 

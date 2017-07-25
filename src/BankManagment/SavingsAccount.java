@@ -4,6 +4,9 @@ package BankManagment;
 public class SavingsAccount implements Account {
 
     private double accountBalance;
+    public SavingsAccount(){
+
+    }
 
     public SavingsAccount(double accountBalance) {
         this.accountBalance = accountBalance;
